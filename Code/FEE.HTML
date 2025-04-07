@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindForge</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><h1>MindForge</h1></li>
+                <li><a href="#courses" class="btn">Courses</a></li>
+                <li><a href="About.html" class="btn">About us</a></li>
+                <li><a href="contactus.html" class="btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Learning Platform</h2>
+            <p>Your gateway to knowledge</p>
+            <a href="signuup.html" class="btn">Signup</a>
+            <a href="#courses" class="btn">Explore Free Courses</a>
+            <a href="Enrollform.html" class="btn">Login</a>
+        </section>
+        <body>
+
+            <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyiwlT07pKvtfF3vFHPMDHDoWTv1_Qt7SjWA&s" alt="Image">
+            <button id="nextButton">Next</button>
+          
+            <script>
+              const images = [
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyiwlT07pKvtfF3vFHPMDHDoWTv1_Qt7SjWA&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOGBX57MDGoFmCiAG4OacBOj-lMiQvNSgB-g&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUNmv5o3RyxrDChISZvqb5fG9nxsTQVTxPg&shttps://miro.medium.com/v2/resize:fit:600/1*OFsc0SD55jhi8cjo7aCA4w.jpeg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1DmLCy9PSJfFqO55mNTYOQLx3x8THsbokkw&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHIblg5VduM-c7Z3hgT6Z2q08NwmtQRLsFLw&s",
+                "https://media.licdn.com/dms/image/v2/D5612AQHR83xExzWnsA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1695886165184?e=2147483647&v=beta&t=Hiw_54L_8WKepIL8wG7rW70n-42VVw52jRHNvfl0JG8",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaVEbySPpL6thTKRzdESt5v75g5Ie4J_G69w&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFf3vgaINk6CmGFMkblKXvLeINbQrtRDQag&s"
+              ];
+          
+              let currentIndex = 0;
+          
+              document.getElementById('nextButton').addEventListener('click', function () {
+                currentIndex = (currentIndex + 1) % images.length; // Loop back to the first image
+                document.getElementById('image').src = images[currentIndex];
+              });
+            </script>
+          
+          </body>
+
+     <div class="courses-container">
+                <div class="course-card">
+                    <h3>DECA</h3>
+                    <p>DECA (Digital Computing and Computer Attributes) focuses on advanced digital computing technologies, system architectures, algorithms, and emerging computational models.</p>
+                    <a href="Deca.html" class="btn">Learn</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>Python</h3>
+                    <p>Python is a high-level, versatile programming language known for its simplicity, readability, and vast libraries supporting diverse applications.</p>
+                    <a href="signuup.html" class="btn">Enroll Now</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>HTML</h3>
+                    <p>HTML (HyperText Markup Language) is the standard language for creating web pages, structuring content with elements like text, images, and links.</p>
+                    <a href="signuup.html" class="btn">Enroll Now</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>CSS</h3>
+                    <p>Explore machine learning, deep learning, and neural networks.</p>
+                    <a href="signuup.html" class="btn">Enroll Now</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>JavaScript</h3>
+                    <p>CSS (Cascading Style Sheets) is used to style and layout web pages, controlling design aspects like colors, fonts, and spacing.</p>
+                    <a href="signuup.html" class="btn">Enroll Now</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>Bootstrap</h3>
+                    <p>Bootstrap is a popular front-end framework for building responsive websites, offering pre-designed components, grids, and CSS-based utilities.</p>
+                    <a href="signuup.html" class="btn">Enroll Now</a>
+                </div>
+                
+                <div class="course-card">
+                    <h3>CASA</h3>
+                    <p>CASA (Computer Algebra Systems and Applications) in math focuses on using software to perform symbolic computations, solve equations, and analyze mathematical models.</p>
+                    <a href="signuup.html" class="btn">Enroll Now</a>
+                </div>
+                <div class="course-card">
+                    <h3>C</h3>
+                    <p>C is a high-level programming language known for its efficiency and control, widely used for system programming and developing applications.</p>
+                    <a href="signuup.html" class="btn">Enroll Now</a>
+                </div>
+                <div class="course-card">
+                    <h3>C++</h3>
+                    <p>C++ is an extension of the C programming language that incorporates object-oriented features, enabling complex software development with greater flexibility and code reuse.</p>
+                    <a href="signuup.html" class="btn">Enroll Now</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+<footer>
+    <h1>Thanks for using our website</h1><br>
+</footer>
+</body>
+</html>
